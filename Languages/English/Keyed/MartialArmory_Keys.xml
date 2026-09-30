@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <MA_CantEquipTwoHandedWithShield>Cannot wield two-handed weapon while holding a shield.</MA_CantEquipTwoHandedWithShield>
+  <MA_DroppedShieldForTwoHanded>{PAWN_nameDef} dropped {SHIELD_label} to wield two-handed weapon.</MA_DroppedShieldForTwoHanded>
+  <MA_DroppedTwoHandedForShield>{PAWN_nameDef} dropped {WEAPON_label} to equip shield.</MA_DroppedTwoHandedForShield>
+  <MA_ShieldBlocked>Blocked!</MA_ShieldBlocked>
+</LanguageData>

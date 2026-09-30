@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Base Shield ==================== -->
+  <ThingDef Name="MA_ShieldBase" ParentName="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <techLevel>Medieval</techLevel>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+        <li>MA_Shield</li>
+      </tags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>FueledSmithingBench</li>
+        <li>ElectricSmithingBench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+  </ThingDef>
+
+  <!-- ==================== Buckler ==================== -->
+  <ThingDef ParentName="MA_ShieldBase">
+    <defName>MA_Shield_Buckler</defName>
+    <label>buckler</label>
+    <description>A small, nimble shield gripped in the fist or strapped to the forearm. Excellent for deflecting and parrying melee strikes with no penalty to movement speed, though offering limited coverage against ranged missiles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shield/Buckler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.0</Mass>
+      <Flammability>0.6</Flammability>
+      <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>FueledSmithingBench</li>
+        <li>ElectricSmithingBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>350</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="MartialArmory.CompProperties_Shield">
+        <meleeBlockChanceBase>0.35</meleeBlockChanceBase>
+        <rangedBlockChanceBase>0.15</rangedBlockChanceBase>
+        <damageToShieldFactor>0.40</damageToShieldFactor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== Round Shield ==================== -->
+  <ThingDef ParentName="MA_ShieldBase">
+    <defName>MA_Shield_Round</defName>
+    <label>round shield</label>
+    <description>A classic circular shield crafted from wood or iron with a central boss. Offers well-rounded protection against both close-quarters attacks and incoming arrows.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shield/RoundShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>45</costStuffCount>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Mass>2.2</Mass>
+      <Flammability>0.6</Flammability>
+      <StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
+      <EquipDelay>2.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>FueledSmithingBench</li>
+        <li>ElectricSmithingBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>355</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="MartialArmory.CompProperties_Shield">
+        <meleeBlockChanceBase>0.45</meleeBlockChanceBase>
+        <rangedBlockChanceBase>0.30</rangedBlockChanceBase>
+        <damageToShieldFactor>0.50</damageToShieldFactor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== Kite Shield ==================== -->
+  <ThingDef ParentName="MA_ShieldBase">
+    <defName>MA_Shield_Kite</defName>
+    <label>kite shield</label>
+    <description>An elongated teardrop shield developed for mounted and infantry knights. The tapered lower half shields the bearer's legs while the broad upper curved rim guards the torso against archery and heavy melee blows.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shield/KiteShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>65</costStuffCount>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>3.5</Mass>
+      <Flammability>0.5</Flammability>
+      <StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>360</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="MartialArmory.CompProperties_Shield">
+        <meleeBlockChanceBase>0.50</meleeBlockChanceBase>
+        <rangedBlockChanceBase>0.45</rangedBlockChanceBase>
+        <damageToShieldFactor>0.50</damageToShieldFactor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== Tower Shield ==================== -->
+  <ThingDef ParentName="MA_ShieldBase">
+    <defName>MA_Shield_Tower</defName>
+    <label>tower shield</label>
+    <description>A massive, curved rectangular shield designed to anchor defensive shield walls. While heavy and unwieldy to carry across the battlefield, it offers unmatched barrier protection against missile volleys and crushing assaults.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shield/TowerShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Mass>6.0</Mass>
+      <Flammability>0.5</Flammability>
+      <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+      <EquipDelay>3.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>365</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="MartialArmory.CompProperties_Shield">
+        <meleeBlockChanceBase>0.60</meleeBlockChanceBase>
+        <rangedBlockChanceBase>0.60</rangedBlockChanceBase>
+        <damageToShieldFactor>0.60</damageToShieldFactor>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

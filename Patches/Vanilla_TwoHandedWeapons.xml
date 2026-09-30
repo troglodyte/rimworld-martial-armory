@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- LongSword -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/weaponTags</xpath>
+    <value>
+      <li>MA_TwoHanded</li>
+    </value>
+  </Operation>
+
+  <!-- Spear -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/weaponTags</xpath>
+    <value>
+      <li>MA_TwoHanded</li>
+    </value>
+  </Operation>
+
+  <!-- Warhammer (Royalty / Core) -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/weaponTags</xpath>
+      <value>
+        <li>MA_TwoHanded</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Greatbow -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]/weaponTags</xpath>
+    <value>
+      <li>MA_TwoHanded</li>
+    </value>
+  </Operation>
+
+  <!-- Pila -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Pila"]/weaponTags</xpath>
+    <value>
+      <li>MA_TwoHanded</li>
+    </value>
+  </Operation>
+
+</Patch>

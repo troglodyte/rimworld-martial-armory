@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Martial Armory</name>
+  <author>throwingfish</author>
+  <packageId>throwingfish.martialarmory</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+  <description>Adds classic D&amp;D and historical non-magical melee weapons and physical shields with mechanical 1-handed vs 2-handed weapon restrictions and active shield blocking.
+
+⚔️ Weapons Included:
+• Halberd (2H): Heavy polearm with high cutting power and armor-piercing reach.
+• Morningstar (1H): Spiked impact weapon dealing hybrid blunt force and puncture wounds.
+• War Pick (1H): Armor-penetrating pick engineered to pierce heavy plate and mechanoid armor.
+• Scimitar (1H): Fast curved blade with rapid attacks and severe bleed application.
+• Quarterstaff (2H): Sturdy blunt staff for non-lethal subdue and early-game defense.
+
+🛡️ Shields (One-Handed Only):
+• Buckler: Small, nimble shield focused on high melee parry with zero move speed penalty.
+• Round Shield: Balanced, versatile circular shield protecting against melee and archery.
+• Kite Shield: Knightly teardrop shield covering legs and torso with strong frontal coverage.
+• Tower Shield: Massive barrier with supreme missile/melee deflection at the cost of movement speed.
+
+⚙️ Mechanics:
+• One-Handed Only: Shields can only be wielded alongside one-handed weapons. Two-handed weapons (Halberd, Quarterstaff, Longsword, Spear, Warhammer, Greatbow) cannot be used with shields.
+• Active Blocking: Shields give pawns a dynamic chance to block incoming melee attacks and deflect projectiles based on shield stats and pawn manipulation/melee skill.
+
+No DLC required.</description>
+</ModMetaData>
